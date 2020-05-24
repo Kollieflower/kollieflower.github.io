@@ -90,6 +90,7 @@ body {
 }
 .SiteHeaderButtonText {
     transform: skew(30deg);
+    user-select: none;
 }
 .RestrictWidth {
     margin: 0 auto;
