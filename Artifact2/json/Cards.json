@@ -2463,11 +2463,11 @@
                     "english":"Verdant Refuge"
                 },
                 "set": 1,
-                "rarity": 0,
+                "rarity": 4,
                 "colour": "G",
                 "image": "200071_0",
                 "miniimage": "200071_0",
-                "cost": 5,
+                "cost": 0,
                 "text":{
                     "english":"Spell effect is currently unknown. /n /n Mana Cost is currently unknown."
                 },
