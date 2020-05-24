@@ -504,11 +504,31 @@ body {
     float: left;
     margin-bottom: 9px;
 }
+.CVCHeaderItems {
+    width: 100%;
+    font-family: 'Radiance', sans-serif;
+    color: #ccc;
+    font-size: 18pt;
+    margin-bottom: 9px;
+}
 .CVCInnerContainer {
-    width: 20%;
+    width: 25%;
     float: left;
     min-height: 20px;
     margin-bottom: 20px;
+}
+.CVCInnerContainerItems {
+    width: 100%;
+    min-height: 20px;
+    margin-bottom: 20px;
+}
+.CVCOuterContainer80 {
+    width: 80%;
+    float: left;
+}
+.CVCOuterContainer20 {
+    width: 20%;
+    float: left;
 }
 #CVCRedOuterContainer, #CVCBlueOuterContainer,#CVCBlackOuterContainer, #CVCGreenOuterContainer {
     width: 100%;
