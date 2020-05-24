@@ -3126,5 +3126,56 @@
                 "quick": false
             }
         ]
+    },
+    {
+        "card_id":200090,
+        "versions":[
+            {
+                "release_date":"2018-11-28",
+                "card_type":"Item",
+                "card_subtype": "Weapon",
+                "card_name":{
+                    "english":"Blade of the Vigil"
+                },
+                "set": 1,
+                "rarity": 1,
+                "image": "200090_0",
+                "miniimage": "200090_0",
+                "cost": 0,
+                "gcost": 7,
+                "text":{
+                    "english":" /n Equipped hero has +2 Attack and +4 Cleave."
+                },
+                "attack": 2,
+                "armour": 0,
+                "hp": 0,
+                "abilities": [ ],
+                "crosslane": false,
+                "quick": false
+            },
+            {
+                "release_date":"2020-05-21",
+                "card_type":"Item",
+                "card_subtype": "Weapon",
+                "card_name":{
+                    "english":"Blade of the Vigil"
+                },
+                "set": 1,
+                "rarity": 4,
+                "image": "200090_0",
+                "miniimage": "200090_0",
+                "cost": 1,
+                "gcost": 0,
+                "text":{
+                    "english":" /n +2[ATT] and +3 Cleave."
+                },
+                "attack": 10,
+                "armour": 0,
+                "hp": 0,
+                "abilities": [ ],
+                "crosslane": false,
+                "quick": false
+            }
+        ]
     }
 ]
