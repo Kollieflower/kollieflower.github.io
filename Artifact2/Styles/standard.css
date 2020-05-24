@@ -5,13 +5,13 @@
 
 @font-face {
 	font-family: 'Radiance';
-	src: url('Radiance-Regular.otf') format('opentype');
+	src: url('fonts/Radiance-Regular.otf') format('opentype');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'RadianceCon';
-	src: url('radiance-regularcondensed-fixed.otf') format('opentype');
+	src: url('fonts/radiance-regularcondensed-fixed.otf') format('opentype');
 	font-weight: normal;
 	font-style: normal;
 }
