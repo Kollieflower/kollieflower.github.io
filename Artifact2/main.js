@@ -228,6 +228,10 @@ function GenerateCardViewerPage(Filter) {
     CVCBlackImpHTML = "";
     CVCGreenImpHTML = "";
     CVCColourlessImpHTML = "";
+    CVCWeaponHTML = "";
+    CVCArmorHTML = "";
+    CVCAccessoryHTML = "";
+    CVCConsumableHTML = "";
 
     for (i = 0; i < CardsToDisplay.length; i++) {
         ThisCard = CardsToDisplay[i];
@@ -337,6 +341,25 @@ function GenerateCardViewerPage(Filter) {
                 CardListCostStyle = "CardList_Cost CardList_GoldCost";
                 CardListCardTypeIconStyle = "CardList_CardTypeIconItem";
                 CardColour = "I";
+                ItemSubtype = ThisCard['versions'][LatestCardVersion]['card_subtype'];
+
+                switch (ItemSubtype) {
+                    case 'Weapon':
+                        CVCWeaponHTML += GenerateCVCHTML(ThisCard);
+                        break;
+                    case 'Armor':
+                        CVCArmorHTML += GenerateCVCHTML(ThisCard);
+                        break;
+                    case 'Accessory':
+                        CVCAccessoryHTML += GenerateCVCHTML(ThisCard);
+                        break;
+                    case 'Consumable':
+                        CVCConsumableHTML += GenerateCVCHTML(ThisCard);
+                        break;
+                    default:
+                        CVCConsumableHTML += GenerateCVCHTML(ThisCard);
+                        break;
+                }
                 break;
             default:
                 CardCostToDisplay = ThisCard['versions'][LatestCardVersion]['cost'];
@@ -344,7 +367,6 @@ function GenerateCardViewerPage(Filter) {
                 CardListCardTypeIconStyle = "CardList_CardTypeIcon"+CardType;
                 CardColour = ThisCard['versions'][LatestCardVersion]['colour'];
         }
-
         LongCardListHTML += '<div class="CardListItemContainer CardListItemContainer'+CardColour+'" onmouseup="CardViewer_SelectCard(\''+CardIDV+'\');"> \
                                 <div class="CardList_CardMiniPicture"><img src=Images/Cards/MiniImage/'+CardMiniImage+'.jpg></div> \
                                 <div class="CardList_CardTypeIcon '+CardListCardTypeIconStyle+'"></div> \
@@ -374,6 +396,12 @@ function GenerateCardViewerPage(Filter) {
     document.getElementById('CVCBlackImp').innerHTML = CVCBlackImpHTML;
     document.getElementById('CVCGreenImp').innerHTML = CVCGreenImpHTML;
     document.getElementById('CVCColourlessImp').innerHTML = CVCColourlessImpHTML;
+    document.getElementById('CVCWeapons').innerHTML = CVCWeaponHTML;
+    document.getElementById('CVCArmor').innerHTML = CVCArmorHTML;
+    document.getElementById('CVCAcc').innerHTML = CVCAccessoryHTML;
+    document.getElementById('CVCCon').innerHTML = CVCConsumableHTML;
+
+    
 
 }
 
@@ -383,16 +411,19 @@ function GenerateCVCHTML(Card) {
     CardType = Card['versions'][LatestCardVersion]['card_type'];
     CardMiniImage = Card['versions'][LatestCardVersion]['miniimage'];
     CardName = Card['versions'][LatestCardVersion]['card_name']['english'];
-    CardColour = Card['versions'][LatestCardVersion]['colour'];
+    
     CardIDV = CardID+'_'+LatestCardVersion;
 
     if (CardType == 'Hero') {
+        CardColour = Card['versions'][LatestCardVersion]['colour'];
         CardCostToShow = '&nbsp;';
         CardCostStyle = "";
     } else if (CardType == 'Item') {
+        CardColour = "I";
         CardCostToShow = Card['versions'][LatestCardVersion]['gcost'];
         CardCostStyle = "CVCCardListingCardCostGold";
     } else {
+        CardColour = Card['versions'][LatestCardVersion]['colour'];
         CardCostToShow = Card['versions'][LatestCardVersion]['cost'];
         CardCostStyle = "CVCCardListingCardCostMana";
     }
@@ -425,7 +456,11 @@ function CardViewer_SelectCard(CardIDV) {
     ThisCard = CardJSON[CardArrayIndex]['versions'][CardVersion];
 
     document.getElementById('CardDetailsPanelCardTitle').innerHTML = ThisCard['card_name']['english'];
-    document.getElementById('CardDetailsPanelCardType').innerHTML = ThisCard['card_type'];
+    if (ThisCard['card_type'] == "Item") {
+        document.getElementById('CardDetailsPanelCardType').innerHTML = ThisCard['card_type']+' - '+ThisCard['card_subtype'];
+    } else {
+        document.getElementById('CardDetailsPanelCardType').innerHTML = ThisCard['card_type'];
+    }
 
     //SHOW SIGNATURE CARD DETAILS ON LEFT
     if ("signature" in ThisCard) { 

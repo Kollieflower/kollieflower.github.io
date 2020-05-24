@@ -184,6 +184,7 @@
             {
                 "release_date":"2020-04-06",
                 "card_type":"Item",
+                "card_subtype": "Weapon",
                 "card_name":{
                     "english":"Sheep Stick"
                 },
@@ -937,6 +938,7 @@
             {
                 "release_date":"2020-05-04",
                 "card_type":"Item",
+                "card_subtype": "Consumable",
                 "card_name":{
                     "english":"Revtel Mercenary Contract"
                 },
@@ -965,6 +967,7 @@
             {
                 "release_date":"2020-05-04",
                 "card_type":"Item",
+                "card_subtype": "Weapon",
                 "card_name":{
                     "english":"Force Staff"
                 },
@@ -993,6 +996,7 @@
             {
                 "release_date":"2020-05-04",
                 "card_type":"Item",
+                "card_subtype": "Weapon",
                 "card_name":{
                     "english":"Hooked Net"
                 },
@@ -1021,6 +1025,7 @@
             {
                 "release_date":"2020-05-04",
                 "card_type":"Item",
+                "card_subtype": "Accessory",
                 "card_name":{
                     "english":"Necronomicon"
                 },
@@ -1077,6 +1082,7 @@
             {
                 "release_date":"2020-05-04",
                 "card_type":"Item",
+                "card_subtype": "Armor",
                 "card_name":{
                     "english":"Root Boots"
                 },
@@ -1105,6 +1111,7 @@
             {
                 "release_date":"2018-11-28",
                 "card_type":"Item",
+                "card_subtype": "Accessory",
                 "card_name":{
                     "english":"Phase Boots"
                 },
@@ -1128,6 +1135,7 @@
             {
                 "release_date":"2020-05-11",
                 "card_type":"Item",
+                "card_subtype": "Accessory",
                 "card_name":{
                     "english":"Phase Boots"
                 },
@@ -1156,6 +1164,7 @@
             {
                 "release_date":"2018-11-28",
                 "card_type":"Item",
+                "card_subtype": "Accessory",
                 "card_name":{
                     "english":"Claszureme Hourglass"
                 },
@@ -1179,6 +1188,7 @@
             {
                 "release_date":"2020-05-11",
                 "card_type":"Item",
+                "card_subtype": "Accessory",
                 "card_name":{
                     "english":"Claszureme Hourglass"
                 },
@@ -1207,6 +1217,7 @@
             {
                 "release_date":"2018-11-28",
                 "card_type":"Item",
+                "card_subtype": "Armor",
                 "card_name":{
                     "english":"Nyctasha's Guard"
                 },
@@ -1230,6 +1241,7 @@
             {
                 "release_date":"2020-05-11",
                 "card_type":"Item",
+                "card_subtype": "Armor",
                 "card_name":{
                     "english":"Nyctasha's Guard"
                 },
@@ -2682,6 +2694,7 @@
             {
                 "release_date":"2018-11-28",
                 "card_type":"Item",
+                "card_subtype": "Weapon",
                 "card_name":{
                     "english":"Claymore"
                 },
@@ -2704,6 +2717,7 @@
             {
                 "release_date":"2020-05-21",
                 "card_type":"Item",
+                "card_subtype": "Weapon",
                 "card_name":{
                     "english":"Claymore"
                 },
@@ -2755,6 +2769,7 @@
             {
                 "release_date":"2020-05-21",
                 "card_type":"Item",
+                "card_subtype": "Consumable",
                 "card_name":{
                     "english":"Blink Scroll"
                 },
@@ -2782,6 +2797,7 @@
             {
                 "release_date":"2020-05-21",
                 "card_type":"Item",
+                "card_subtype": "Armor",
                 "card_name":{
                     "english":"Ring of Basilius"
                 },
@@ -2887,6 +2903,7 @@
             {
                 "release_date":"2018-11-28",
                 "card_type":"Item",
+                "card_subtype": "Accessory",
                 "card_name":{
                     "english":"Horn of the Alpha"
                 },
@@ -2909,6 +2926,7 @@
             {
                 "release_date":"2020-05-21",
                 "card_type":"Item",
+                "card_subtype": "Accessory",
                 "card_name":{
                     "english":"Horn of the Alpha"
                 },

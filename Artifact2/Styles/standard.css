@@ -547,6 +547,17 @@ body {
     font-size: 16pt;
     color: #eee;
 }
+.CVCCardListingCardCostGold {
+    background-image: url('../Images/Styles/GC.png');
+    background-size: 100%;
+    font-family: 'Radiance', sans-serif;
+    text-shadow: 1px 1px 2px #000;
+    padding-top: 3px;
+    height: 27px;
+    text-align: center;
+    font-size: 16pt;
+    color: #eee;
+}
 .CVCCardListingCardName {
     width: calc(100% - 60px);
     padding-top: 5px;
@@ -569,6 +580,9 @@ body {
 .CVCCardListingG {
     background: linear-gradient(170deg, rgba(62,90,50,0.9) 20%, rgba(47,72,36,0.6));
 }
+.CVCCardListingI {
+    background: linear-gradient(170deg, rgba(122, 92, 34,0.8) 20%, rgba(102, 76, 28,0.3));
+}
 .CVCCardListingC {
     background: linear-gradient(170deg, rgba(56, 62, 55,0.8) 20%, rgba(56, 62, 55,0.3));
 }
@@ -583,6 +597,9 @@ body {
 }
 .CVCCardListingG:hover {
     background: linear-gradient(170deg, rgba(77, 112, 61, 0.9) 20%, rgba(47,72,36,0.7));
+}
+.CVCCardListingI:hover {
+    background: linear-gradient(170deg, rgba(122, 92, 34,0.9) 20%, rgba(102, 76, 28,0.7));
 }
 .CVCCardListingC:hover {
     background: linear-gradient(170deg, rgba(56, 62, 55,0.9) 20%, rgba(56, 62, 55,0.6));
