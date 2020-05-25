@@ -138,7 +138,7 @@
                 "colour": "U",
                 "image": "200006_0",
                 "miniimage": "PH",
-                "cost": 1,
+                "cost": 4,
                 "text":{
                     "english":"[TG]Play Effect:[ET] Copy innate abilities from the enemy blocking Morphling Whelp."
                 },
@@ -165,7 +165,7 @@
                 "colour": "U",
                 "image": "200007_0",
                 "miniimage": "PH",
-                "cost": 1,
+                "cost": 5,
                 "text":{
                     "english":"[TG]Play Effect:[ET] Bounce the enemy blocking Defenestrating Ogre."
                 },
